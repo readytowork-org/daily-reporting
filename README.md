@@ -1,4 +1,4 @@
-To obtain a GitHub token, you need to generate a personal access token in your GitHub account. Follow these steps to create a personal access token:
+**To obtain a GitHub token**, you need to generate a personal access token in your GitHub account. Follow these steps to create a personal access token:
 
 GitHub Settings:
 
@@ -17,3 +17,12 @@ Click the "Generate token" button.
 Copy Token:
 
 Copy the generated token immediately. GitHub will not show it again.
+
+
+
+After that
+setup the .env
+with username and github token
+
+than run by
+```go run main.go```
