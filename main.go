@@ -102,8 +102,8 @@ func formatEvents(events []map[string]interface{}) string {
 	report := fmt.Sprintf("%s:\n", time.Now().Format("Jan 02, 2006"))
 
 	// Default lines in every report
-	report += "• Done | Attended frail-check meeting\n"
-	report += "• Done | Attended frail-check followup meeting\n"
+	report += "Done | Attended frail-check meeting\n"
+	report += "Done | Attended frail-check followup meeting\n"
 
 	// Keep track of seen pull request titles
 	seenTitles := make(map[string]bool)
@@ -155,12 +155,12 @@ func formatEvents(events []map[string]interface{}) string {
 
 			// Append to the report only if status and prTitle are not empty
 			if status != "" && prTitle != "" {
-				report += fmt.Sprintf("• %s | %s\n", status, prTitle)
+				report += fmt.Sprintf("%s | %s\n", status, prTitle)
 			}
 		}
 	}
 
-	report += "Next:\n• Continue with assigned task and R&D\n"
+	report += "Next:\nContinue with assigned task and R&D\n"
 
 	return report
 }
